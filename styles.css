@@ -11,33 +11,50 @@
 }
 
 .main-content {
-    position: fixed;
+    position: relative;
     background-color: var(--lightaccent);
     min-height: 100vh;
     top: 0;
     left: 280px;
     transition: all 0.5s ease;
     width: calc(100% - 280px);
+    overflow: auto;
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 280px;
-    background-color: lightgrey;
+    background-color: var(--darkpurple);
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
 }
+
+/* #navbar-custom {
+    color: var(--lightaccent);
+    background-color: var(--darkpurple) !important;
+
+} */
 
 p {
     color: var(--darkaccent);
 }
 
-.avatar {
-    background-color: var(--paleyellow);
-    border-radius: 50%;
+h3 {
+    color: var(--paleyellow);
+    font-size:large;
+    text-align: center;
+}
+
+span.sidebar {
+    text-align: center;
+}
+
+.sidebar > hr {
+    color: var(--lightaccent);
+    padding-bottom: 5px;
 }
 
 /* .sidebar.active ~ .main-content {
