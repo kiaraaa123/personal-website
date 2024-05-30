@@ -35,7 +35,17 @@
         #avatar, .mini-avatar {
             background-color: #fff48f;
             border-radius: 50%;
-            border: 1px solid #1d1f20;
+            border: 1px solid #3B2E5A;
+        }
+
+        @media (max-width: 600px) {
+          .sidebar {
+            display: none;
+          }
+
+          .main-content {
+            width: 100%;
+          }
         }
     </style>
 
@@ -56,7 +66,7 @@
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
                 <a href="#" class="nav-link active" aria-current="page">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="16 16">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                       </svg>
                   Home
@@ -65,7 +75,7 @@
 
               <li>
                 <a href="#projects" class="nav-link text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-heart" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clipboard-heart" viewBox="16 16">
                         <path fill-rule="evenodd" d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
                         <path d="M3 1.5h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"/>
                         <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982"/>
@@ -76,7 +86,7 @@
 
               <li>
                 <a href="#education" class="nav-link text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mortarboard" viewBox="16 16">
                         <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
                         <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
                       </svg>
@@ -86,7 +96,7 @@
 
               <li>
                 <a href="#experience" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar4-range" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar4-range" viewBox="16 16">
                     <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
                     <path d="M9 7.5a.5.5 0 0 1 .5-.5H15v2H9.5a.5.5 0 0 1-.5-.5zm-2 3v1a.5.5 0 0 1-.5.5H1v-2h5.5a.5.5 0 0 1 .5.5"/>
                   </svg>
@@ -96,7 +106,7 @@
 
               <li>
                 <a href="#skills" class="nav-link text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stars" viewBox="16 16">
                         <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
                       </svg>
                   Skills
@@ -105,7 +115,7 @@
 
               <li>
                 <a href="#contact" class="nav-link text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at" viewBox="16 16">
                         <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
                         <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
                       </svg>
@@ -117,18 +127,18 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="main-content container-fluid">
 
         <!-- About Me / Hero -->
         <div class="container" id="about">
-            <div class="container col-xxl-8 px-4 py-5">
+            <div class="container col-xxl-10 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="./images/kiara-avatar.svg" class="d-block mx-lg-auto img-fluid" id="avatar" alt="Avatar of Ki'ara" width="700" height="500">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi, I'm Ki'ara!</h1>
-                    <p class="lead"><span>I'm a passionate Frontend Developer dedicated to crafting engaging, user-friendly web experiences.</span> I love bringing creative ideas to life and ensuring every detail is just right. Outside of work, I'm a mom and wife who enjoys crafting, rollerskating, working out, random dancing, tending to my houseplants, and catching up on pop culture commentary. <br><br> Let's connect and create something amazing together! ✨</p>
+                    <p class="lead"><span>I'm a passionate Frontend Developer dedicated to creating engaging, user-friendly web experiences.</span> I love bringing creative ideas to life and ensuring every detail is just right. Outside of work, I'm a mom and wife who enjoys crafting, rollerskating, random dancing, tending to my houseplants, and catching up on pop culture commentary. <br><br> Let's connect and create something amazing together! ✨</p>
                     <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
@@ -292,7 +302,7 @@
             <h2 class="py-2 border-bottom">Education</h2>
             <div class="row pt-2">
                 <div class="col-sm-12 col-md-6 mb-3 mb-sm-0">
-                    <div class="card">
+                    <div class="card h-100">
                         <h5 class="card-header">Arizona State University</h5>
                         <div class="card-body">
                           <h5 class="card-title">MS, Graphic Information Technology</h5>
@@ -302,7 +312,7 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 mb-3 mb-sm-0">
-                  <div class="card">
+                  <div class="card h-100">
                       <h5 class="card-header">The App Brewery</h5>
                       <div class="card-body">
                         <h5 class="card-title">Complete Web Development Bootcamp</h5>
@@ -312,7 +322,7 @@
               </div>
 
               <div class="col-sm-12 col-md-6 mb-3 mb-sm-0 pt-3">
-                <div class="card">
+                <div class="card h-100">
                     <h5 class="card-header">Skillcrush</h5>
                     <div class="card-body">
                       <h5 class="card-title">UX Design Certification</h5>
@@ -322,7 +332,7 @@
             </div>
 
                 <div class="col-sm-12 col-md-6 mb-3 mb-sm-0 pt-3">
-                    <div class="card">
+                    <div class="card h-100">
                         <h5 class="card-header">Virginia Commonwealth University</h5>
                         <div class="card-body">
                           <h5 class="card-title">BS, Mass Communications - Public Relations</h5>
@@ -335,13 +345,17 @@
 
         <!-- Experience -->
         <div class="container pt-2" id="experience">
-          <div class="container pt-2">
             <h2 class="py-2 border-bottom">Experience</h2>
             <div class="card mb-3">
               <div class="card-header bg-transparent">Intercept Health</div>
               <div class="card-body">
                 <h5 class="card-title">Media Content Specialist</h5>
-                <p class="card-text">Responsibilities and Achievements</p>
+                <ul class="card-text">
+                  <li>Led the redesign of the B2B SaaS company’s landing pages by successfully identifying complex pain points, introducing design thinking, and creating solutions that met business requirements and user needs, resulting in higher conversion rates.</li>
+                  <li>Led high-level strategy sessions with thought leaders and executives to align on outcomes and copy for industry-specific guides, infographics, and blog posts that address customer pain points.</li>
+                  <li>Reviewed and interpreted web statistics, social media analytics, and other research data, to create effective, desirable, and user-friendly digital user interfaces and graphics that increase user engagement.</li>
+                  <li>Managed marketing activities and demonstrated expertise in various areas, such as content development and optimization, advertising, and event planning through various channels including website, blog, social media, and e-mail marketing.</li>
+                </ul>
               </div>
               <div class="card-footer bg-transparent">Feb 2023 to Present | Richmond, VA</div>
             </div>
@@ -350,7 +364,12 @@
               <div class="card-header bg-transparent">SafetyChain Software</div>
               <div class="card-body">
                 <h5 class="card-title">Marketing Coordinator</h5>
-                <p class="card-text">Responsibilities and Achievements</p>
+                <ul class="card-text">
+                  <li>Led the redesign of the B2B SaaS company’s landing pages by successfully identifying complex pain points, introducing design thinking, and creating solutions that met business requirements and user needs, resulting in higher conversion rates.</li>
+                  <li>Led high-level strategy sessions with thought leaders and executives to align on outcomes and copy for industry-specific guides, infographics, and blog posts that address customer pain points.</li>
+                  <li>Reviewed and interpreted web statistics, social media analytics, and other research data, to create effective, desirable, and user-friendly digital user interfaces and graphics that increase user engagement.</li>
+                  <li>Managed marketing activities and demonstrated expertise in various areas, such as content development and optimization, advertising, and event planning through various channels including website, blog, social media, and e-mail marketing.</li>
+                </ul>
               </div>
               <div class="card-footer bg-transparent">Jan 2022 to Jan 2023 | Novato, CA</div>
             </div>
@@ -359,54 +378,59 @@
               <div class="card-header bg-transparent">The Action Alliance</div>
               <div class="card-body">
                 <h5 class="card-title">Communications Coordinator</h5>
-                <p class="card-text">Responsibilities and Achievements</p>
+                <ul class="card-text">
+                  <li>Led problem-solving strategy sessions with the executive leadership team to create a more accessible and user-friendly redesign of the organization’s primary website, substantially increasing the website's traffic and lowering the overall bounce rate.</li>
+                  <li>Established a monthly giving program, The Movement Builders, by implementing marketing best practices to support the creation and expansion of the Action Alliance’s non-grant-funded programs, resulting in >$12,000 in additional fundraising revenue.</li>
+                  <li>Created and executed internal and external marketing campaigns via social media and email marketing, that drove the organizational mission, increased funding by ~$1M annually, and increased community awareness.</li>
+                  <li>Wrote copy for fundraising materials including annual reports, appeal letters, e-blasts, and social media posts that inspired community members and leaders to take action and support the work of the Action Alliance.</li>
+                </ul>
               </div>
               <div class="card-footer bg-transparent">Sept 2016 to Feb 2022 | Richmond, VA</div>
             </div>
-          </div>
         </div>
 
         <!-- Skills -->
-        <div id="skills">
-            <div class="container px-4 pt-5" id="featured-3">
-                <h2 class="pb-2 border-bottom">Skills</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                  <div class="feature col">
-                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                      Call to action
-                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                  </div>
-                  <div class="feature col">
-                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                      Call to action
-                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                  </div>
-                  <div class="feature col">
-                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                      <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-                    </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                      Call to action
-                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                    </a>
-                  </div>
-                </div>
+        <div class="container" id="skills">
+          <div class="container pt-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Skills</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
               </div>
+              <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Call to action
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Call to action
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Call to action
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+          </div>
+          </div>
         </div>
+        
 
         <!-- Contact Me -->
         <div id="contact">
@@ -441,7 +465,10 @@
             <div class="container">
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                   <div class="col-md-4 d-flex align-items-center">
-                    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 | Designed and Developed by Ki'ara Colbert</span>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 | Designed and Developed by Ki'ara Colbert | <a href="https://github.com/kiaraaa123/personal-website" id="code"> View Code <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="16 16">
+                      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                    </svg></a></span>
                   </div>
 
 
