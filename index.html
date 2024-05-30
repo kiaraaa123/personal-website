@@ -35,6 +35,7 @@
         #avatar, .mini-avatar {
             background-color: #fff48f;
             border-radius: 50%;
+            border: 1px solid #1d1f20;
         }
 
 
@@ -45,7 +46,10 @@
 
 <body>
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar container-fluid">
+      <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#sidebarContent" aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
         <div class="d-flex flex-column flex-shrink-0 p-3 sidebar" style="width: 280px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>

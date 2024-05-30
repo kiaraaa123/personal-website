@@ -147,7 +147,16 @@ span.sidebar {
     display: none;
 } */
 
-/* .nav-link.active {
-    background-color: var(--paleyellow);
-    color: var(--darkaccent);
-  } */
+.nav-link.active {
+    background-color: var(--paleyellow) !important;
+    color: var(--darkaccent) !important;
+  }
+
+.nav-link:hover {
+    background-color: var(--medblue); /* Change to your preferred hover background color */
+    color: var(--lightaccent); /* Change to your preferred hover text color */
+  }
+
+  .nav-link {
+    color: var(--lightaccent);
+  }
