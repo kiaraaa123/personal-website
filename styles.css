@@ -146,3 +146,8 @@ span.sidebar {
 .sidebar.active ul li .tool-tip {
     display: none;
 } */
+
+/* .nav-link.active {
+    background-color: var(--paleyellow);
+    color: var(--darkaccent);
+  } */
