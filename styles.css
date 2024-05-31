@@ -176,3 +176,34 @@ span.sidebar {
     font-weight: 600;
 }
 
+.card-header {
+    background-color: var(--medblue) !important;
+    color: var(--lightaccent);
+}
+
+.card-footer {
+    background-color: #1d1f2030 !important;
+    color: var(--darkaccent);
+    border-color: var(--darkaccent);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--darkpurple);
+    color: var(--lightaccent);
+}
+
+.btn-primary {
+    background-color: var(--medblue);
+    color: var(--lightaccent);
+    border-color: var(--lightaccent);
+}
+
+.btn-primary:hover {
+    background-color: var(--paleyellow);
+    color: var(--darkaccent);
+    border-color: var(--darkaccent);
+}
+
+footer a > svg:hover {
+    color: var(--darkpurple);
+}
