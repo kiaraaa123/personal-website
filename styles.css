@@ -182,7 +182,7 @@ span.sidebar {
 }
 
 .card-footer {
-    background-color: #1d1f2030 !important;
+    background-color: whitesmoke !important;
     color: var(--darkaccent);
     border-color: var(--darkaccent);
 }
