@@ -28,6 +28,14 @@
         top: 55px;
         left: 0;
     }
+
+    #contact-buttons {
+        display: block !important;
+    }
+
+    #contact-buttons > button {
+        margin: 5px 0;
+    }
 }
 
 .sidebar {
@@ -250,4 +258,15 @@ footer span > a:hover, footer a > svg:hover {
 #offcanvasSidebarLabel > span {
     color: var(--paleyellow);
     font-size: large;
+}
+
+#project-stack-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+}
+
+#project-stack-icons img {
+    width: 20px;
+    height: 20px;
 }
