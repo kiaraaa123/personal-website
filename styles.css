@@ -16,9 +16,18 @@
     min-height: 100vh;
     top: 0;
     left: 280px;
-    transition: all 0.5s ease;
+    transition: all 0.15s ease;
     width: calc(100% - 280px);
     overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        left: 0;
+    }
 }
 
 .sidebar {
