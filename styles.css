@@ -16,7 +16,7 @@
     min-height: 100vh;
     top: 0;
     left: 280px;
-    transition: all 0.15s ease;
+    /* transition: all 0.25s ease; */
     width: calc(100% - 280px);
     overflow: auto;
 }
@@ -41,6 +41,10 @@
     transition: all 0.5s ease;
 }
 
+.navbar {
+    background-color: var(--darkpurple);
+}
+
 /* #navbar-custom {
     color: var(--lightaccent);
     background-color: var(--darkpurple) !important;
@@ -54,10 +58,6 @@ p {
 h3 {
     color: var(--paleyellow);
     font-size:large;
-    text-align: center;
-}
-
-span.sidebar {
     text-align: center;
 }
 
@@ -219,4 +219,35 @@ footer a > svg {
 
 footer span > a:hover, footer a > svg:hover {
     color: var(--medblue) !important;
+}
+
+#avatar, .mini-avatar {
+    background-color: #fff48f;
+    border-radius: 50%;
+    border: 1px solid #3B2E5A;
+}
+
+.navbar span, #offcanvasSidebarLabel {
+    color: var(--lightaccent);
+}
+
+.sidebar > a {
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: var(--lightaccent);
+}
+
+#offcanvasSidebar {
+    background-color: var(--darkpurple);
+}
+
+#title {
+    text-align: left;
+}
+
+#offcanvasSidebarLabel > span {
+    color: var(--paleyellow);
+    font-size: large;
 }
