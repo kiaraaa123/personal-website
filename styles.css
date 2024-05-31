@@ -204,6 +204,10 @@ span.sidebar {
     border-color: var(--darkaccent);
 }
 
-footer a > svg:hover {
+footer a > svg {
     color: var(--darkpurple);
+}
+
+footer span > a:hover, footer a > svg:hover {
+    color: var(--medblue) !important;
 }
