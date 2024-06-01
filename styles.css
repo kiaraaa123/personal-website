@@ -33,13 +33,12 @@
         display: block !important;
     }
 
-    #contact-buttons > button {
+    #contact-buttons button {
         margin: 5px 0;
     }
 
-    footer {
-        display: flex;
-        justify-conte  nt: center;
+    #about {
+        
     }
 }
 
