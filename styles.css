@@ -36,6 +36,11 @@
     #contact-buttons > button {
         margin: 5px 0;
     }
+
+    footer {
+        display: flex;
+        justify-conte  nt: center;
+    }
 }
 
 .sidebar {
