@@ -61,6 +61,10 @@
     transition: all 0.5s ease;
 }
 
+.btn-group > a {
+    padding: 3px;
+}
+
 .navbar {
     background-color: var(--darkpurple);
 }
@@ -112,6 +116,7 @@ h3 {
 .card-header {
     background-color: var(--medblue) !important;
     color: var(--lightaccent);
+    text-align: center;
 }
 
 .card-footer {
@@ -185,4 +190,28 @@ footer span > a:hover, footer a > svg:hover {
 #project-stack-icons img {
     width: 20px;
     height: 20px;
+}
+
+.skill-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-top: 2px;
+}
+
+.skill-section-title {
+    grid-column: 1 / 5;
+    color: var(--lightaccent);
+    background-color: var(--darkpurple);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.skill > img {
+    width: 95px;
+    padding-top: 8px;
+}
+
+.skill {
+    text-align: center;
 }
