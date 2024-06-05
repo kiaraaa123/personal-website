@@ -1,3 +1,16 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+
+
+/* 1. Global Styles
+======================================== */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +21,6 @@
     --paleyellow: #FFF48F;
     --lightaccent: #ecf0f1;
     --darkaccent: #1d1f20;
-}
-
-.main-content {
-    position: relative;
-    background-color: var(--lightaccent);
-    min-height: 100vh;
-    top: 0;
-    left: 280px;
-    /* transition: all 0.25s ease; */
-    width: calc(100% - 280px);
-    overflow: auto;
 }
 
 @media (max-width: 768px) {
@@ -50,6 +52,68 @@
     }
 }
 
+
+
+/* 2. Typography Styles
+======================================== */
+h3 {
+    color: var(--paleyellow);
+    font-size:large;
+    text-align: center;
+}
+
+p {
+    color: var(--darkaccent);
+}
+
+p > span {
+    color: var(--darkpurple);
+    font-weight: 600;
+}
+
+#title {
+    text-align: left;
+}
+
+
+
+/* 3. Structure Styles
+======================================== */
+
+.skill-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding-top: 2px;
+}
+
+.skill-section-title {
+    grid-column: 1 / 5;
+    color: var(--lightaccent);
+    background-color: var(--darkpurple);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main-content {
+    position: relative;
+    background-color: var(--lightaccent);
+    min-height: 100vh;
+    top: 0;
+    left: 280px;
+    /* transition: all 0.25s ease; */
+    width: calc(100% - 280px);
+    overflow: auto;
+}
+
+
+
+/* 4. Modules Styles
+======================================== */
+
+/* Site Navigation */
+
+/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -61,22 +125,12 @@
     transition: all 0.5s ease;
 }
 
-.btn-group > a {
-    padding: 3px;
-}
-
-.navbar {
-    background-color: var(--darkpurple);
-}
-
-p {
-    color: var(--darkaccent);
-}
-
-h3 {
-    color: var(--paleyellow);
-    font-size:large;
+.sidebar > a {
     text-align: center;
+}
+
+#offcanvasSidebar {
+    background-color: var(--darkpurple);
 }
 
 .sidebar > hr {
@@ -84,27 +138,46 @@ h3 {
     padding-bottom: 5px;
 }
 
+#offcanvasSidebarLabel > span {
+    color: var(--paleyellow);
+    font-size: large;
+}
+
+/* Navbar */
+.navbar span, #offcanvasSidebarLabel {
+    color: var(--lightaccent);
+}
+
+.navbar-toggler {
+    background-color: var(--lightaccent);
+}
+
+.navbar {
+    background-color: var(--darkpurple);
+}
+
 .nav-link.active {
     background-color: var(--paleyellow) !important;
     color: var(--darkaccent) !important;
-  }
+}
 
 .nav-link:hover {
     background-color: var(--medblue);
     color: var(--lightaccent);
-  }
+}
 
-  .nav-link {
+.nav-link {
     color: var(--lightaccent);
-  }
+}
 
-  p > span {
+
+/* Site Footer */
+footer a > svg {
     color: var(--darkpurple);
-    font-weight: 600;
-  }
+}
 
-#about {
-    background-color: whitesmoke;
+footer span > a:hover, footer a > svg:hover {
+    color: var(--medblue) !important;
 }
 
 #code {
@@ -113,18 +186,12 @@ h3 {
     font-weight: 600;
 }
 
-.card-header {
-    background-color: var(--medblue) !important;
-    color: var(--lightaccent);
-    text-align: center;
-}
 
-.card-footer {
-    background-color: whitesmoke !important;
-    color: var(--darkaccent);
-    border-color: var(--darkaccent);
-}
 
+/* 5. Component Styles
+======================================== */
+
+/* Buttons */
 .btn-outline-secondary:hover {
     background-color: var(--darkpurple);
     color: var(--lightaccent);
@@ -142,43 +209,35 @@ h3 {
     border-color: var(--darkaccent);
 }
 
-footer a > svg {
-    color: var(--darkpurple);
+.btn-group > a {
+    padding: 3px;
 }
 
-footer span > a:hover, footer a > svg:hover {
-    color: var(--medblue) !important;
+/* Cards */
+.card-header {
+    background-color: var(--medblue) !important;
+    color: var(--lightaccent);
+    text-align: center;
+}
+
+.card-footer {
+    background-color: whitesmoke !important;
+    color: var(--darkaccent);
+    border-color: var(--darkaccent);
+}
+
+
+
+/* 6. Page Styles
+======================================== */
+#about {
+    background-color: whitesmoke;
 }
 
 #avatar, .mini-avatar {
     background-color: #fff48f;
     border-radius: 50%;
     border: 1px solid #3B2E5A;
-}
-
-.navbar span, #offcanvasSidebarLabel {
-    color: var(--lightaccent);
-}
-
-.sidebar > a {
-    text-align: center;
-}
-
-.navbar-toggler {
-    background-color: var(--lightaccent);
-}
-
-#offcanvasSidebar {
-    background-color: var(--darkpurple);
-}
-
-#title {
-    text-align: left;
-}
-
-#offcanvasSidebarLabel > span {
-    color: var(--paleyellow);
-    font-size: large;
 }
 
 #project-stack-icons {
@@ -190,21 +249,6 @@ footer span > a:hover, footer a > svg:hover {
 #project-stack-icons img {
     width: 20px;
     height: 20px;
-}
-
-.skill-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    padding-top: 2px;
-}
-
-.skill-section-title {
-    grid-column: 1 / 5;
-    color: var(--lightaccent);
-    background-color: var(--darkpurple);
-    padding: 5px;
-    border-radius: 5px;
 }
 
 .skill > img {
