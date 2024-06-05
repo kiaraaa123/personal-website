@@ -1,5 +1,5 @@
 /* Site Stylesheet
-  1. Global Styles
+  1. Global Styles & Media Queries
   2. Typography Styles
   3. Structure Styles
   4. Module Styles
@@ -9,7 +9,7 @@
 
 
 
-/* 1. Global Styles
+/* 1. Global Styles & Media Queries
 ======================================== */
 * {
     margin: 0;
@@ -21,6 +21,17 @@
     --paleyellow: #FFF48F;
     --lightaccent: #ecf0f1;
     --darkaccent: #1d1f20;
+}
+
+.main-content {
+    position: relative;
+    background-color: var(--lightaccent);
+    min-height: 100vh;
+    top: 0;
+    left: 280px;
+    /* transition: all 0.25s ease; */
+    width: calc(100% - 280px);
+    overflow: auto;
 }
 
 @media (max-width: 768px) {
@@ -93,17 +104,6 @@ p > span {
     background-color: var(--darkpurple);
     padding: 5px;
     border-radius: 5px;
-}
-
-.main-content {
-    position: relative;
-    background-color: var(--lightaccent);
-    min-height: 100vh;
-    top: 0;
-    left: 280px;
-    /* transition: all 0.25s ease; */
-    width: calc(100% - 280px);
-    overflow: auto;
 }
 
 
