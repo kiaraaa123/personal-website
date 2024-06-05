@@ -1,10 +1,11 @@
 /* Site Stylesheet
-  1. Global Styles & Media Queries
+  1. Global Styles
   2. Typography Styles
   3. Structure Styles
   4. Module Styles
   5. Component Styles
   6. Page Styles
+  7. Media Queries
 ======================================== */
 
 
@@ -21,46 +22,6 @@
     --paleyellow: #FFF48F;
     --lightaccent: #ecf0f1;
     --darkaccent: #1d1f20;
-}
-
-.main-content {
-    position: relative;
-    background-color: var(--lightaccent);
-    min-height: 100vh;
-    top: 0;
-    left: 280px;
-    /* transition: all 0.25s ease; */
-    width: calc(100% - 280px);
-    overflow: auto;
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        width: 100%;
-        position: static;
-        top: 55px;
-        left: 0;
-    }
-
-    #contact-buttons {
-        display: block !important;
-    }
-
-    #contact-buttons button {
-        margin: 5px 0;
-    }
-
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
-    }
-
-    #card-2 {
-        padding-top: 16px;
-    }
 }
 
 
@@ -90,6 +51,16 @@ p > span {
 
 /* 3. Structure Styles
 ======================================== */
+.main-content {
+    position: relative;
+    background-color: var(--lightaccent);
+    min-height: 100vh;
+    top: 0;
+    left: 280px;
+    /* transition: all 0.25s ease; */
+    width: calc(100% - 280px);
+    overflow: auto;
+}
 
 .skill-section {
     display: grid;
@@ -258,4 +229,46 @@ footer span > a:hover, footer a > svg:hover {
 
 .skill {
     text-align: center;
+}
+
+
+
+/* 7. Media Queries
+======================================== */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        position: static;
+        top: 55px;
+        left: 0;
+    }
+
+    #contact-buttons {
+        display: block !important;
+    }
+
+    #contact-buttons button {
+        margin: 5px 0;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #card-2 {
+        padding-top: 16px;
+    }
+
+    .skill p {
+        font-size: 8px;
+    }
+
+    .skill > img {
+        width: 55px;
+        padding-top: 8px;
+    }
 }
